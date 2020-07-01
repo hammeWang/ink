@@ -307,7 +307,7 @@ pub enum AttributeArgKind {
     /// any other ink! attributes, so it would be flagged by ink! as a Rust item.
     /// Adding `#[ink(impl)]` on such implementation blocks makes them treated
     /// as ink! implementation blocks thus allowing to access the environment
-    /// etc. Note that ink! messages and constructors still need to be explicitely
+    /// etc. Note that ink! messages and constructors still need to be explicitly
     /// flagged as such.
     Implementation,
 }
@@ -414,7 +414,7 @@ where
 
 /// Sanitizes the given attributes.
 ///
-/// This paritions the attributes into ink! and non-ink! attributes.
+/// This partitions the attributes into ink! and non-ink! attributes.
 /// All ink! attributes are normalized, they are checked to have a valid first
 /// ink! attribute argument and no conflicts given the conflict predicate.
 ///
